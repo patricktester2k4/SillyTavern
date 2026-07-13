@@ -57,13 +57,14 @@ ssl:
   keyPassphrase: ""
 # -- SECURITY CONFIGURATION --
 # Toggle whitelist mode
-whitelistMode: false
+whitelistMode: true
 # When enabled, whitelist will also verify IP in headers enabled in `forwardedHeaders` section.
-enableForwardedWhitelist: false
+enableForwardedWhitelist: true
 # Whitelist of allowed IP addresses
 whitelist:
   - ::1
   - 127.0.0.1
+  - 178.128.112.244
 # Automatically whitelist Docker host and gateway IPs
 whitelistDockerHosts: true
 # Toggle basic authentication for endpoints
